@@ -1,0 +1,20 @@
+{
+  "name": "bookmark-landing-page-master",
+  "version": "1.0.0",
+  "description": "project build with by Yarol Abraham",
+  "main": "index.js",
+  "scripts": {
+    "start:sass": "parcel ./src/sass/main.scss",
+    "start:js": "parcel ./src/js/index.js",
+    "build:sass": "parcel build ./src/sass/main.scss --dist-dir ./dist",
+    "build:js": "parcel build ./src/js/index.js --dist-dir ./dist"
+  },
+  "author": "Yarol Abraham",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "sass": "^1.45.1"
+  }
+}
