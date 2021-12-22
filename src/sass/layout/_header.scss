@@ -1,0 +1,128 @@
+.header{
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    .hidden{
+        display: none;
+    }
+    &__card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &--logo{
+            padding: 1rem;
+            width: 20rem;
+        }
+        &--menu{
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            padding: 1rem;
+            @include respond(phone) {
+                display: none;
+            }
+        }
+        &--links{
+            width: 60%;
+            display: none;
+            flex-direction: row;
+            justify-content: space-between;
+            a{
+                border-radius: 0.4rem;
+                box-sizing: border-box;
+                background-color: transparent;
+                font-size: 1.4rem;
+                color: $black;
+                text-transform: uppercase;
+                padding: 1rem;
+                text-align: center;
+                -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+                transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+                @include respond(tab-port) {
+                    width: 12rem;
+                }
+            }
+            a:hover, a:focus{
+                color: #fff;
+                outline: 0;
+                box-shadow: 0 0 40px 40px $soft_red inset;
+            }
+            a:last-child{
+                border-radius: 0.4rem;
+                color: $white;
+                font-weight: 500;
+                box-shadow: 0 0 40px 40px $soft_red inset, 0 0 0 0 $soft_red;
+                -webkit-transition: all 150ms ease-in-out;
+                transition: all 150ms ease-in-out;
+            }
+
+            a:last-child:hover {
+                color: $black;
+                box-shadow: 0 0 3px 0 $soft_red inset, 0 0 3px 2px $soft_red;
+            }
+          
+            @include respond(phone) {
+                display: flex;
+            }
+        }
+    }
+    &__nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: $very_Dark_Blue-light;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        @include respond(phone) {
+            display: none;
+        }
+        &--options{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        &--logo{
+            padding: 1rem;
+        }
+        &--close{
+            border: none;
+            padding: 1rem;
+            background: transparent;
+        }
+        &--links{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                border-top: 1px solid $grayish_blue-opacity;
+                width: 100%;
+                font-size: 2rem;
+                color: $white;
+                padding: 1.5rem;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            a:last-child{
+                border: 2px solid $white;
+            }
+        }
+        &--redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            a{
+                padding: 1rem;
+                width: 5rem;
+                margin: 0 1rem;
+            }
+        }
+    }
+}

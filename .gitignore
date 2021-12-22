@@ -2,6 +2,7 @@ node_modules
 design
 README-guia.md
 style-guide.md
+.parcel-cache
 # Avoid accidental Sketch file upload 
 ###############################################
 ## Please do not remove line 5 - thanks! 🙂 ##

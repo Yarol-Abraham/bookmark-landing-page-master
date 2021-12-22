@@ -5,11 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/main.css">
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body>
 
+  <header class="header">
+    <div class="container">
+        
+        <div class="header__card">
+          <a 
+            href="#"
+            class="header__card--logo"
+          >
+            <img src="./src/images/logo-bookmark.svg" alt="logo bookmark" />
+          </a>
+  
+          <button 
+            type="button"
+            class="header__card--menu"
+            id="btn--menu"
+          >
+            <img src="./src/images/icon-hamburger.svg" alt="icon hamburger" />
+          </button>
+
+          <div class="header__card--links">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+          </div> <!-- div -->
+
+        </div> <!-- div -->
+
+        <nav class="header__nav hidden">
+          
+          <div class="header__nav--options">
+            <a 
+              href="#"
+              class="header__nav--logo"
+            >
+              <img src="./src/images/logo-bookmark-white.svg" alt="logo bookmark" />
+            </a>
+    
+            <button 
+              type="button"
+              class="header__nav--close"
+              id="btn--close"
+            >
+              <img src="./src/images/icon-close.svg" alt="icon close" />
+            </button>
+          </div> <!-- div -->
+
+          <div class="header__nav--links">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+          </div> <!-- div -->
+         
+          <div class="header__nav--redes">
+            <a href="#">
+              <img src="./src/images/icon-facebook.svg" alt="icon facebook">
+            </a>
+            <a href="#">
+              <img src="./src/images/icon-twitter.svg" alt="icon twitter">
+            </a>
+          </div> <!-- div -->
+        
+        </nav> <!-- nav -->
+    </div> <!-- container -->
+  </header> <!-- header -->
   
 
   <footer>
@@ -18,5 +87,9 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+  <!-- script -->
+  <script src="./dist/index.js" type="module"></script>
+
 </body>
 </html>

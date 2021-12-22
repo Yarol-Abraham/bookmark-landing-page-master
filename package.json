@@ -12,9 +12,8 @@
   "author": "Yarol Abraham",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.1"
-  },
-  "dependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1",
     "sass": "^1.45.1"
   }
 }

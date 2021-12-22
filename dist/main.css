@@ -1,0 +1,198 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  letter-spacing: 0.2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  transition: 650ms all ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+}
+.header .hidden {
+  display: none;
+}
+.header__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__card--logo {
+  padding: 1rem;
+  width: 20rem;
+}
+.header__card--menu {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 1rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .header__card--menu {
+    display: none;
+  }
+}
+.header__card--links {
+  width: 60%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__card--links a {
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 1.4rem;
+  color: #000;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-align: center;
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+@media only screen and (min-width: 56.25em) {
+  .header__card--links a {
+    width: 12rem;
+  }
+}
+.header__card--links a:hover, .header__card--links a:focus {
+  color: #fff;
+  outline: 0;
+  box-shadow: 0 0 40px 40px #fa5757 inset;
+}
+.header__card--links a:last-child {
+  border-radius: 0.4rem;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 0 40px 40px #fa5757 inset, 0 0 0 0 #fa5757;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.header__card--links a:last-child:hover {
+  color: #000;
+  box-shadow: 0 0 3px 0 #fa5757 inset, 0 0 3px 2px #fa5757;
+}
+@media only screen and (min-width: 37.5em) {
+  .header__card--links {
+    display: flex;
+  }
+}
+.header__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(37, 43, 70, 0.918);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 37.5em) {
+  .header__nav {
+    display: none;
+  }
+}
+.header__nav--options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.header__nav--logo {
+  padding: 1rem;
+}
+.header__nav--close {
+  border: none;
+  padding: 1rem;
+  background: transparent;
+}
+.header__nav--links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__nav--links a {
+  border-top: 1px solid rgba(145, 148, 161, 0.336);
+  width: 100%;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__nav--links a:last-child {
+  border: 2px solid #fff;
+}
+.header__nav--redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.header__nav--redes a {
+  padding: 1rem;
+  width: 5rem;
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=main.css.map */
