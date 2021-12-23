@@ -1,0 +1,58 @@
+.btn{
+    cursor: pointer;
+    border: none;
+    padding: 1.8rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    @include respond(tab-port) {
+        font-size: 1.4rem;
+        padding: 1.4rem;
+    }
+}
+
+.btn-blue{
+    color: $white;
+    box-shadow: 0 0 40px 40px $soft_blue inset, 0 0 0 0 $soft_blue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.btn-blue:hover{
+    color: $black;
+    box-shadow: 0 0 3px 0 $soft_blue inset, 0 0 3px 2px $soft_blue;
+}
+
+.btn-white{
+    color: $black;
+    background: $white;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.123);
+}
+
+.btn-white:hover, .btn-white:focus{
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 40px 40px $soft_blue inset;
+}
+
+.btn-red{
+    background: $soft_red;
+}
+
+.btn-ms{
+    width: 10rem;
+}
+
+.btn-md{
+    width: 20rem;
+    @include respond(tab-port) {
+        width: 15rem;
+    }
+    
+}
+
+.btn-lg{
+    width: 25rem;
+}

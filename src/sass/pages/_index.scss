@@ -1,0 +1,64 @@
+.bookmark{
+    position: relative;
+    margin: 4rem 0;
+    padding: 2rem;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        @include respond(tab-port) {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+        }
+    }
+
+    &__imagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 45rem;
+            @include respond(phone) {
+                width: 60rem;
+            }
+        }
+    }
+
+    &__imagen::before{
+        content: "";
+        position: absolute;
+        top: 10rem;
+        right: 0;
+        width: 35rem;
+        height: 23rem;
+        background: $soft_blue;
+        z-index: -1;
+        border-top-left-radius: 20rem;
+        border-bottom-left-radius: 20rem;
+        @include respond(phone) {
+            width: 60rem;
+            height: 34rem;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include respond(tab-port) {
+            text-align: left;
+            width: 70%;
+            height: 22rem;
+            justify-content: space-between;
+        }
+        &__item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            @include respond(tab-port) {
+                justify-content: flex-start;
+            }
+        }
+    }
+}

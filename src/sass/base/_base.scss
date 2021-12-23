@@ -47,3 +47,21 @@ a{
   width: 90%;
   margin: auto;
 }
+
+h1{
+  font-size: 3rem;
+  color: $very_Dark_Blue;
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
+}
+
+p{
+  color: $grayish_blue;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  @include respond(tab-port) {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
