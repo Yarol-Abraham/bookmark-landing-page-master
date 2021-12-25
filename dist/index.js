@@ -459,13 +459,16 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"3auaO":[function(require,module,exports) {
-var _menuJs = require("./menu.js");
-_menuJs.menu();
+var _domJs = require("./dom.js");
+_domJs.menu();
+_domJs.tabsComponents();
 
-},{"./menu.js":"cyRgG"}],"cyRgG":[function(require,module,exports) {
+},{"./dom.js":"3uBlg"}],"3uBlg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "menu", ()=>menu
+);
+parcelHelpers.export(exports, "tabsComponents", ()=>tabsComponents
 );
 function menu() {
     const btnOpen = document.querySelector('#btn--menu');
@@ -476,6 +479,24 @@ function menu() {
     });
     btnClose.addEventListener('click', function() {
         nav.classList.add('hidden');
+    });
+}
+function tabsComponents() {
+    const features__options = document.querySelector('.features__options');
+    const features__tabs = document.querySelectorAll('.features__tabs');
+    const btn_simple = document.querySelectorAll('.btn-simple');
+    features__options.addEventListener('click', function(e) {
+        const clicked = e.target.closest('.btn-simple');
+        if (!clicked) return;
+        // remove class
+        features__tabs.forEach((el)=>el.classList.remove('features__tabs--active')
+        );
+        btn_simple.forEach((el)=>el.classList.remove('features__options--active')
+        );
+        // Activate button
+        clicked.classList.add('features__options--active');
+        // Activate content area
+        document.querySelector(`.features__tabs--${clicked.dataset.tab}`).classList.add('features__tabs--active');
     });
 }
 

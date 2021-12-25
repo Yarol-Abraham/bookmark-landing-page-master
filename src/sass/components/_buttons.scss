@@ -12,8 +12,27 @@
     }
 }
 
+.btn-simple{
+    color: $grayish_blue;
+    border-radius: 0;
+    border-bottom: 4px solid $white;
+    background: $white;
+    margin-bottom: 1rem;
+    transition: 650ms all ease-in;
+    @include respond(tab-port) {
+        margin-bottom: 0;
+    }
+}
+
+.btn-simple:hover{
+    border-bottom: 4px solid $soft_red;
+    color: $black;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.171);
+}
+
 .btn-blue{
     color: $white;
+    background: $white;
     box-shadow: 0 0 40px 40px $soft_blue inset, 0 0 0 0 $soft_blue;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
@@ -42,7 +61,10 @@
 }
 
 .btn-ms{
-    width: 10rem;
+    width: 12rem;
+    @include respond(tab-port) {
+        width: 10rem;
+    }
 }
 
 .btn-md{
@@ -50,9 +72,8 @@
     @include respond(tab-port) {
         width: 15rem;
     }
-    
 }
 
 .btn-lg{
-    width: 25rem;
+    width: 30rem;
 }

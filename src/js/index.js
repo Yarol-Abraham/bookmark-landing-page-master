@@ -1,3 +1,4 @@
-import { menu } from './menu.js';
+import { menu, tabsComponents } from './dom.js';
 
 menu();
+tabsComponents();
