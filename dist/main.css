@@ -99,6 +99,11 @@ h2 {
   }
 }
 
+h4 {
+  font-size: 2rem;
+  color: #252b46;
+}
+
 p {
   color: #9194a1;
   font-size: 1.8rem;
@@ -551,6 +556,132 @@ p {
     width: 48%;
     height: 18rem;
     padding: 0 5rem;
+  }
+}
+
+.extension {
+  margin: 4rem 0;
+  padding: 2rem;
+}
+.extension__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.extension__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+@media only screen and (min-width: 56.25em) {
+  .extension__content {
+    padding: 0 25rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .extension__content {
+    padding: 0 30rem;
+  }
+}
+.extension__content p {
+  margin-top: 2rem;
+}
+.extension__browsers {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 37.5em) {
+  .extension__browsers {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .extension__browsers {
+    justify-content: center;
+  }
+}
+.extension__browsers__card {
+  width: 100%;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.157);
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 37.5em) {
+  .extension__browsers__card {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .extension__browsers__card {
+    width: 33%;
+  }
+  .extension__browsers__card--1 {
+    margin-top: 0;
+    height: 33rem;
+  }
+  .extension__browsers__card--2 {
+    margin-top: 2rem;
+    height: 33rem;
+  }
+  .extension__browsers__card--3 {
+    margin-top: 4rem;
+    height: 33rem;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .extension__browsers__card {
+    width: 25%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+.extension__browsers__card--image {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extension__browsers__card--image img {
+  width: 15rem;
+}
+@media only screen and (min-width: 56.25em) {
+  .extension__browsers__card--image {
+    padding: 3rem;
+  }
+  .extension__browsers__card--image img {
+    width: 10rem;
+  }
+}
+.extension__browsers__card--content {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+}
+@media only screen and (min-width: 56.25em) {
+  .extension__browsers__card--content {
+    padding: 1.5rem;
+  }
+}
+.extension__browsers__card--download {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 56.25em) {
+  .extension__browsers__card--download {
+    padding: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
