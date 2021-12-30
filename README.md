@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./src/images/readme/1.png" alt="preview 1" />
-<img src="./src/images/readme/2.png" alt="preview 2" />
+<img src="/readme/1.png" alt="preview 1" />
+<img src="/readme/2.png" alt="preview 2" />
 
 ### Links
 
