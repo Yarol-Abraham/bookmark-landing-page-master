@@ -17,17 +17,17 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Live Site URL: [Add live site URL here](https://bookmark-master.netlify.app)
 
 ### Built with
 
-- Semantic HTML5 markup
 - CSS custom properties
+- SASS
 - Flexbox
-- CSS Grid
+- Html5
+- vanilla js
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Yarol-Abraham](https://www.frontendmentor.io/profile/Yarol-Abraham)
+- Linkedin - [@Yarol-Abraham](www.linkedin.com/in/yarol-abraham)

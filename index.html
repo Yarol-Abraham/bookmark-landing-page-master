@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/main.css">
+  <link rel="stylesheet" href="./src/sass/main.scss">
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
+  <header class="header ">
+    <div class="container ">
         
         <div class="header__card">
           <a 
@@ -80,7 +80,7 @@
     </div> <!-- container -->
   </header> <!-- header -->
   
-  <main>
+  <main class="main">
 
     <section class="bookmark"> 
       <div class="container">
@@ -88,7 +88,7 @@
 
           <div class="bookmark__imagen">
             <img src="./src/images/illustration-hero.svg" alt="hero" />   
-          </div> <!-- div -->
+          </div> <!-- bookmark__imagen -->
 
           <div class="bookmark__content">
               <h1>A Simple Bookmark Manager</h1>
@@ -234,17 +234,134 @@
       </div> <!-- container -->
     </section> <!-- section extension -->
 
+    <section class="questions">
+      <div class="container">
+        <div class="questions__card">
+            <div class="questions__content">
+              <h2>Frequently Asked Questions</h2>
+              <p>Here are some of our FAQs. if you have any other questions you'd like answered please feel free to email us.</p>
+            </div> <!-- questions__content -->
+
+            <div class="questions__responses">
+           
+              <div class="questions__responses__item">
+                
+                <div class="questions__responses__item--title"  data-question="1">
+                  <p>What is Bookmark?</p>
+                  <div class="questions__responses__item--imagen"><!-- icon-arrow --></div><!-- questions__responses__item--imagen -->
+                </div>
+
+                <div class="questions__responses__item--paragraph questions__responses__item--paragraph--1">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo ab nisi doloremque pariatur sint culpa quod, voluptate rerum quibusdam reiciendis, cumque expedita totam animi asperiores illo voluptas? Perferendis, perspiciatis!</p>
+                </div><!-- questions__responses__item--paragraph -->
+              
+              </div> <!-- questions__responses__item -->
+           
+              <div class="questions__responses__item">
+                
+                <div class="questions__responses__item--title" data-question="2">
+                  <p>How can i request a new browser?</p>
+                  <div class="questions__responses__item--imagen"><!-- icon-arrow --></div><!-- questions__responses__item--imagen -->
+                </div>
+
+                <div class="questions__responses__item--paragraph questions__responses__item--paragraph--2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo ab nisi doloremque pariatur sint culpa quod, voluptate rerum quibusdam reiciendis, cumque expedita totam animi asperiores illo voluptas? Perferendis, perspiciatis!</p>
+                </div><!-- questions__responses__item--paragraph -->
+              
+              </div> <!-- questions__responses__item -->
+
+              <div class="questions__responses__item">
+                
+                <div class="questions__responses__item--title" data-question="3">
+                  <p>Is there a mobile app?</p>
+                  <div class="questions__responses__item--imagen"><!-- icon-arrow --></div><!-- questions__responses__item--imagen -->
+                </div>
+
+                <div class="questions__responses__item--paragraph questions__responses__item--paragraph--3">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo ab nisi doloremque pariatur sint culpa quod, voluptate rerum quibusdam reiciendis, cumque expedita totam animi asperiores illo voluptas? Perferendis, perspiciatis!</p>
+                </div><!-- questions__responses__item--paragraph -->
+              
+              </div> <!-- questions__responses__item -->
+
+              <div class="questions__responses__item">
+                
+                <div class="questions__responses__item--title" data-question="4">
+                  <p>What about other Chromium browsers?</p>
+                  <div class="questions__responses__item--imagen"><!-- icon-arrow --></div><!-- questions__responses__item--imagen -->
+                </div>
+
+                <div class="questions__responses__item--paragraph questions__responses__item--paragraph--4">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo ab nisi doloremque pariatur sint culpa quod, voluptate rerum quibusdam reiciendis, cumque expedita totam animi asperiores illo voluptas? Perferendis, perspiciatis!</p>
+                </div><!-- questions__responses__item--paragraph -->
+              
+              </div> <!-- questions__responses__item -->
+
+            </div> <!-- questions__responses --> 
+
+            <button class="btn btn-ms btn-blue">More info</button>
+
+        </div><!-- questions__card -->
+        
+      </div><!-- container -->
+    </section> <!-- section questions -->
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__card">
+          <p>35.000 + already joined</p>
+          <h2>Stay up-to-date with what we're doing</h2>
+        </div><!-- contact__card -->
+        <form class="contact__form">
+          <div class="contact__form__item">
+            <div class="contact__form__item--field">
+              <input type="text" class="contact__form__item--text" placeholder="Enter your email address" />
+              <div class="contact__form__item--imagen">
+                <img src="./src/images/icon-error.svg" alt="error" />
+              </div><!-- contact__form__item--imagen -->
+            </div><!-- contact__form__item--field -->
+            <p class="contact__form__item--alert">Whoops, make sure it's an email</p>
+          </div><!-- contact__form__item -->
+          <button type="submit" class="btn btn-md btn-red">Contact Us</button>
+        </form><!-- contact__form -->
+      </div>
+    </section> <!-- section contact -->
+
+    <section class="menu">
+      <div class="container">
+        <div class="menu__card" >
+            <div class="menu__card--imagen">
+              <img src="./src/images/logo-bookmark-white-2.svg" alt="logo bookmark" />
+            </div><!-- menu__card--imagen -->
+            <div class="menu__card__item">
+              <div class="menu__card__item--options">
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+              </div><!-- menu__card__item--options -->
+              <div class="menu__card__item--redes">
+                <a href="#">
+                  <img src="./src/images/icon-facebook.svg" alt="icon facebook">
+                </a>
+                <a href="#">
+                  <img src="./src/images/icon-twitter.svg" alt="icon twitter">
+                </a>
+              </div><!-- menu__card__item--redes -->
+            </div><!-- menu__card__item -->
+        </div><!-- menu__card -->
+      </div><!-- container -->
+    </section><!-- section menu -->
+
   </main><!-- main -->
 
-  <footer>
-    <p class="attribution">
+  <footer class="footer">
+    <p class="footer__attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Yarol-Abraham" target="_blank">Yarol Abraham</a>.
     </p>
-  </footer>
+  </footer> <!-- footer -->
 
   <!-- script -->
-  <script src="./dist/index.js" type="module"></script>
+  <script src="./src/js/index.js" type="module"></script>
 
 </body>
 </html>

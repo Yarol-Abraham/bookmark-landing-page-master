@@ -1,11 +1,16 @@
 .btn{
     cursor: pointer;
     border: none;
+    height: 4.5rem;
     padding: 1.8rem;
     border-radius: 0.8rem;
     font-size: 1.8rem;
     font-weight: bold;
     margin: 0 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include respond(tab-port) {
         font-size: 1.4rem;
         padding: 1.4rem;
@@ -38,7 +43,7 @@
     transition: all 150ms ease-in-out;
 }
 .btn-blue:hover{
-    color: $black;
+    color: $soft_blue;
     box-shadow: 0 0 3px 0 $soft_blue inset, 0 0 3px 2px $soft_blue;
 }
 
@@ -51,13 +56,22 @@
 }
 
 .btn-white:hover, .btn-white:focus{
-    color: #fff;
+    color: $white;
     outline: 0;
     box-shadow: 0 0 40px 40px $soft_blue inset;
 }
 
 .btn-red{
-    background: $soft_red;
+    color: $white;
+    background: $white;
+    box-shadow: 0 0 40px 40px $soft_red inset, 0 0 0 0 $soft_red;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.btn-red:hover{
+    color: $soft_red;
+    box-shadow: 0 0 3px 0 $soft_red inset, 0 0 3px 2px $soft_red;
 }
 
 .btn-ms{

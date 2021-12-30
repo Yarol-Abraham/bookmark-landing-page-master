@@ -2,6 +2,15 @@
     width: 100%;
     padding: 2rem;
     position: relative;
+    &__nav--sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $white;
+        width: 100%;
+        z-index: 999;
+        padding: 2rem 8rem;
+    }
     .hidden{
         display: none;
     }
