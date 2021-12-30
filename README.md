@@ -14,6 +14,9 @@ Users should be able to:
 
 ### Screenshot
 
+<img src="/src/images/readme/1.png" alt="preview 1" />
+<img src="/src/images/readme/2.png" alt="preview 2" />
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
