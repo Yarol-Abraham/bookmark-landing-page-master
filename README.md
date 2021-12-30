@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://bookmark-master.netlify.app)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/bookmark-landing-page-with-html-sass-and-js-avsUHHjdb)
+- Live Site URL: [Demo](https://bookmark-master.netlify.app)
 
 ### Built with
 
@@ -33,4 +33,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Yarol-Abraham](https://www.frontendmentor.io/profile/Yarol-Abraham)
-- Linkedin - [@Yarol-Abraham](www.linkedin.com/in/yarol-abraham)
+- Linkedin - [@Yarol-Abraham](https://www.linkedin.com/in/yarol-abraham)
